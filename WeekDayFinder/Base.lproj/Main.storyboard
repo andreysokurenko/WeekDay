@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G21013" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeekDayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week Day Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckv-P1-FHp">
+                                <rect key="frame" x="103" y="43.999999999999993" width="208.33333333333331" height="51.333333333333321"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="oPc-T2-3f8">
+                                <rect key="frame" x="16" y="152" width="382" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EBt-6n-U8t">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.666666666666671" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txy-RG-naY">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="23.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhN-w4-ZWh">
+                                                <rect key="frame" x="0.0" y="43.333333333333343" width="49.333333333333329" height="23.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGx-UQ-9Uh">
+                                                <rect key="frame" x="0.0" y="86.666666666666657" width="34" height="23.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49.5" id="73w-VY-rgf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="77H-Gi-8V0">
+                                        <rect key="frame" x="60.666666666666657" y="0.0" width="321.33333333333337" height="110"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWe-gc-p6F">
+                                                <rect key="frame" x="0.0" y="0.0" width="321.33333333333331" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xab-59-T95">
+                                                <rect key="frame" x="0.0" y="40" width="321.33333333333331" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saZ-c5-r6Z">
+                                                <rect key="frame" x="0.0" y="80" width="321.33333333333331" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INC-hp-nne">
+                                <rect key="frame" x="163.66666666666666" y="402.66666666666669" width="87" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="nUz-5Z-WHU"/>
+                                </constraints>
+                                <state key="normal" title="Find day">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findDayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f0-a7-EDy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He you will see the day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZU-63-amV">
+                                <rect key="frame" x="124" y="323" width="166" height="40.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="Xx4-Ge-FYS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57598556522425892" blue="0.1151017103687636" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oPc-T2-3f8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="1DF-zw-JTD"/>
+                            <constraint firstItem="INC-hp-nne" firstAttribute="top" secondItem="1ZU-63-amV" secondAttribute="bottom" constant="39" id="Bqi-l1-E1v"/>
+                            <constraint firstItem="INC-hp-nne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FUG-LW-A1C"/>
+                            <constraint firstItem="ckv-P1-FHp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="bVq-Io-Lnj"/>
+                            <constraint firstItem="ckv-P1-FHp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bje-W0-sqb"/>
+                            <constraint firstItem="oPc-T2-3f8" firstAttribute="top" secondItem="ckv-P1-FHp" secondAttribute="bottom" constant="56.5" id="cb2-PW-evr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oPc-T2-3f8" secondAttribute="trailing" constant="-4" id="eRh-az-goQ"/>
+                            <constraint firstItem="1ZU-63-amV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQX-8I-VnB"/>
+                            <constraint firstItem="1ZU-63-amV" firstAttribute="top" secondItem="EBt-6n-U8t" secondAttribute="bottom" constant="61" id="ugI-0N-GdH"/>
+                            <constraint firstAttribute="trailing" secondItem="oPc-T2-3f8" secondAttribute="trailing" constant="16" id="vIG-Xq-ExI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayTextField" destination="oWe-gc-p6F" id="xM4-im-Cag"/>
+                        <outlet property="monthTextField" destination="xab-59-T95" id="Aek-Q8-mZY"/>
+                        <outlet property="resultLabel" destination="1ZU-63-amV" id="Omn-0j-7gk"/>
+                        <outlet property="yearTextField" destination="saZ-c5-r6Z" id="BU6-cm-x4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
